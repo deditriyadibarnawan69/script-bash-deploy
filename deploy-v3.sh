@@ -37,7 +37,7 @@ copy_and_fix_permission() {
 main_menu() {
     while true; do
         echo "======================================"
-        echo "   MENU UTAMA - DEDDY SYNC SCRIPT"
+        echo "   MENU UTAMA - SYNC SCRIPT"
         echo "======================================"
         echo "1. Copy to docroot and set permission"
         echo "2. Exit"
@@ -47,7 +47,7 @@ main_menu() {
 
         case "$choice" in
             1) copy_and_fix_permission ;;
-            2) log "Keluar dari script"; exit 0 ;;
+            2) log "Exit from script"; exit 0 ;;
             *) echo "Pilihan tidak valid. Coba lagi." ;;
         esac
         echo ""
